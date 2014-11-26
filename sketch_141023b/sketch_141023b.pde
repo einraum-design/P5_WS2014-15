@@ -2,6 +2,7 @@
 // is executed once at the beginning of the application
 void setup() {
   size(1200, 600);
+  frameRate(60);
   background(0, 0, 100);
 
   fill(255, 0, 0);
@@ -19,8 +20,10 @@ void draw() {
   strokeWeight(1);
 
   // draw every frame one random ellipse
+  
+  
   fill(random(255), random(255), random(255), 50);
-  ellipse(random(0, width), random(height), 50, 50);
+  ellipse(random(width), random(height), 50, 50);
 
   // the random function:
   // random(max);  0 - max
