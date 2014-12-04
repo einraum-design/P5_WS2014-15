@@ -11,8 +11,11 @@ void draw() {
 
   int counter = 30;
 
+  // while ("condition"){ everything between loops, till condition gets false }
   while (counter < width) {
     ellipse(counter, 30, 30, 30);
+    
+    // increase counter to prevent infinity loop!
     counter = counter + 30;
   }
 
@@ -43,15 +46,4 @@ void draw() {
     line(30, counter, mouseX, mouseY);
     counter = counter + 30;
   }
-
-
-
-
-
-  // ...
-
-  /*
-  fill(255, 255, 255);
-   ellipse(width/2, height/2, 5, 5);
-   */
 }
