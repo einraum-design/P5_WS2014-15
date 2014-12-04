@@ -45,5 +45,5 @@ void draw() {
   while (counter < height) {
     line(30, counter, mouseX, mouseY);
     counter = counter + 30;
-  }
+  }  
 }
